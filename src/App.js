@@ -33,11 +33,11 @@ function App() {
 
   return (
     <div className={classes.appWrapper}>
-      <FolderList></FolderList>
       <div className={classes.componentWrapper}>
         <MessageList messagesArray={messagesArray} />
         <MessageInput onSendMessage={onSendMessage} />
       </div>
+      <FolderList></FolderList>
     </div>    
   );
 }
