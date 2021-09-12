@@ -3,11 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,27 +18,12 @@ const FolderList = () => {
     return (
         <List className={classes.root}>
             <ListItem>
-                <ListItemAvatar>
-                <Avatar>
-                    <ImageIcon />
-                </Avatar>
-                </ListItemAvatar>
                 <ListItemText primary="First Chat" secondary="id: 001" />
             </ListItem>
             <ListItem>
-                <ListItemAvatar>
-                <Avatar>
-                    <WorkIcon />
-                </Avatar>
-                </ListItemAvatar>
                 <ListItemText primary="Second Chat" secondary="id: 002" />
             </ListItem>
             <ListItem>
-                <ListItemAvatar>
-                <Avatar>
-                    <BeachAccessIcon />
-                </Avatar>
-                </ListItemAvatar>
                 <ListItemText primary="Third Chat" secondary="id: 003" />
             </ListItem>
         </List>
