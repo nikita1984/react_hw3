@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100vw",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "self-start",
   },
 
   componentWrapper: {
