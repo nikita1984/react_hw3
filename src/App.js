@@ -26,17 +26,17 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const [messagesArray, setMessagesArray] = useState([]);
 
+  const chatsAray = [
+    {id: "1", name: "First Chat"},
+    {id: "2", name: "Second Chat"},
+    {id: "3", name: "Third Chat"}
+  ];
+
   const classes = useStyles();
 
   const onSendMessage = (messageText) => {
     setMessagesArray((prev) => [...prev, messageText]);
   };
-
-  const chatsAray = [
-    {id: "1", name: "First Chat"},
-    {id: "2", name: "Second Chat"},
-    {id: "3", name: "Third Chat"},
-];
 
   return (
     <div className={classes.appWrapper}>
