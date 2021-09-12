@@ -18,17 +18,16 @@ const chatsAray = [
     {id: "3", name: "Chat 3"},
 ];
 
-const chatsList = chatsAray.map((chat) => (
-<ListItem>
-    <ListItemText primary={chat.name} />
-</ListItem>));
-
 const FolderList = () => {
     const classes = useStyles();
 
     return (
         <List className={classes.root}>
-            {chatsList}
+            {chatsAray.map((chat) => (
+                <ListItem>
+                    <ListItemText primary={chat.name} />
+                </ListItem>))
+            }
         </List>
     );
 };
