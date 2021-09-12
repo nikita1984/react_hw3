@@ -18,13 +18,13 @@ const FolderList = () => {
     return (
         <List className={classes.root}>
             <ListItem>
-                <ListItemText primary="First Chat" secondary="id: 001" />
+                <ListItemText primary="First Chat" />
             </ListItem>
             <ListItem>
-                <ListItemText primary="Second Chat" secondary="id: 002" />
+                <ListItemText primary="Second Chat" />
             </ListItem>
             <ListItem>
-                <ListItemText primary="Third Chat" secondary="id: 003" />
+                <ListItemText primary="Third Chat" />
             </ListItem>
         </List>
     );
