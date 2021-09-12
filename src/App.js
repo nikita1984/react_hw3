@@ -31,13 +31,19 @@ function App() {
     setMessagesArray((prev) => [...prev, messageText]);
   };
 
+  const chatsAray = [
+    {id: "1", name: "Chat 1"},
+    {id: "2", name: "Chat 2"},
+    {id: "3", name: "Chat 4"},
+];
+
   return (
     <div className={classes.appWrapper}>
       <div className={classes.componentWrapper}>
         <MessageList messagesArray={messagesArray} />
         <MessageInput onSendMessage={onSendMessage} />
       </div>
-      <FolderList></FolderList>
+      <FolderList chatsAray={chatsAray}></FolderList>
     </div>    
   );
 }

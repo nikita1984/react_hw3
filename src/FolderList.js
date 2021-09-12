@@ -12,19 +12,19 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const chatsAray = [
-    {id: "1", name: "Chat 1"},
-    {id: "2", name: "Chat 2"},
-    {id: "3", name: "Chat 3"},
-];
+// const chatsAray = [
+//     {id: "1", name: "Chat 1"},
+//     {id: "2", name: "Chat 2"},
+//     {id: "3", name: "Chat 3"},
+// ];
 
-const FolderList = () => {
+const FolderList = ({chatsAray}) => {
     const classes = useStyles();
 
     return (
         <List className={classes.root}>
             {chatsAray.map((chat) => (
-                <ListItem>
+                <ListItem key={chat.id}>
                     <ListItemText primary={chat.name} />
                 </ListItem>))
             }
