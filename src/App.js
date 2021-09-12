@@ -3,6 +3,7 @@ import MessageList from "./MessageList";
 import MessageInput from "./MessageInput";
 import FolderList from "./FolderList.js";
 import { makeStyles } from "@material-ui/core/styles";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
   appWrapper: {
@@ -32,9 +33,9 @@ function App() {
   };
 
   const chatsAray = [
-    {id: "1", name: "Chat 1"},
-    {id: "2", name: "Chat 2"},
-    {id: "3", name: "Chat 4"},
+    {id: "1", name: "First Chat"},
+    {id: "2", name: "Second Chat"},
+    {id: "3", name: "Third Chat"},
 ];
 
   return (
@@ -47,5 +48,9 @@ function App() {
     </div>    
   );
 }
+
+MessageList.propTypes = {
+  chatsAray: PropTypes.array.isRequired,
+};
 
 export default App;
