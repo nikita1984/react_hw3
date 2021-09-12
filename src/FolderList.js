@@ -11,21 +11,24 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.background.paper,
     },
   }));
-  
+
+const chatsAray = [
+    {id: "1", name: "Chat 1"},
+    {id: "2", name: "Chat 2"},
+    {id: "3", name: "Chat 3"},
+];
+
+const chatsList = chatsAray.map((chat) => (
+<ListItem>
+    <ListItemText primary={chat.name} />
+</ListItem>));
+
 const FolderList = () => {
     const classes = useStyles();
 
     return (
         <List className={classes.root}>
-            <ListItem>
-                <ListItemText primary="First Chat" />
-            </ListItem>
-            <ListItem>
-                <ListItemText primary="Second Chat" />
-            </ListItem>
-            <ListItem>
-                <ListItemText primary="Third Chat" />
-            </ListItem>
+            {chatsList}
         </List>
     );
 };
