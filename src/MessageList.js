@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   messageList: {
     width: "100%",
     height: "90%",
